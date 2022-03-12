@@ -1,6 +1,6 @@
 # firebase
 
-A new Flutter project.
+Firebase flutter example with authorization and multilanguage 
 
 ## Getting Started
 
