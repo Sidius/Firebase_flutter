@@ -5,6 +5,12 @@
   "login_hint_text": "Введите вашу почту",
   "password_label_text": "Пароль*",
   "password_hint_text": "Введите свой пароль",
+  "name_label_text": "Имя*",
+  "name_hint_text": "Введите ваше имя",
+  "surname_label_text": "Фамилия*",
+  "surname_hint_text": "Ввудите вашу фамилию",
+  "age_label_text": "Возраст*",
+  "age_hint_text": "Введите возраст",
   "submit_login_form": "Авторизоваться",
   "submit_logout": "Выйти из аккаунта",
   "email_title": "Email",
@@ -12,6 +18,9 @@
   "password_is_required_message": "Пароль обязателен",
   "email_is_required_message": "Почта обязательна",
   "email_is_reg_message": "Это не почта",
+  "name_is_required_message": "Имя обязательно",
+  "surname_is_required_message": "Фамилия обязательна",
   "form_is_not_valid": "Форма неверная",
-  "hello_world": "Привет мир"
+  "hello_world": "Привет мир",
+  "send": "Отправить"
 }

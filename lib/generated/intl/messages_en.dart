@@ -22,6 +22,8 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "age_hint_text": MessageLookupByLibrary.simpleMessage("Enter your age"),
+        "age_label_text": MessageLookupByLibrary.simpleMessage("Age*"),
         "email_is_reg_message":
             MessageLookupByLibrary.simpleMessage("It is not email"),
         "email_is_required_message":
@@ -36,13 +38,24 @@ class MessageLookup extends MessageLookupByLibrary {
         "login_hint_text":
             MessageLookupByLibrary.simpleMessage("Enter your email"),
         "login_label_text": MessageLookupByLibrary.simpleMessage("Login*"),
+        "name_hint_text":
+            MessageLookupByLibrary.simpleMessage("Enter your name"),
+        "name_is_required_message":
+            MessageLookupByLibrary.simpleMessage("Name is required"),
+        "name_label_text": MessageLookupByLibrary.simpleMessage("Name*"),
         "password_hint_text":
             MessageLookupByLibrary.simpleMessage("Enter your password"),
         "password_is_required_message":
             MessageLookupByLibrary.simpleMessage("Password is required"),
         "password_label_text":
             MessageLookupByLibrary.simpleMessage("Password*"),
+        "send": MessageLookupByLibrary.simpleMessage("Send"),
         "submit_login_form": MessageLookupByLibrary.simpleMessage("Sign in"),
-        "submit_logout": MessageLookupByLibrary.simpleMessage("Logout")
+        "submit_logout": MessageLookupByLibrary.simpleMessage("Logout"),
+        "surname_hint_text":
+            MessageLookupByLibrary.simpleMessage("Enter your surname"),
+        "surname_is_required_message":
+            MessageLookupByLibrary.simpleMessage("Surname is required"),
+        "surname_label_text": MessageLookupByLibrary.simpleMessage("Surname*")
       };
 }

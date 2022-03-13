@@ -22,6 +22,9 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "age_hint_text":
+            MessageLookupByLibrary.simpleMessage("Введите возраст"),
+        "age_label_text": MessageLookupByLibrary.simpleMessage("Возраст*"),
         "email_is_reg_message":
             MessageLookupByLibrary.simpleMessage("Это не почта"),
         "email_is_required_message":
@@ -36,14 +39,25 @@ class MessageLookup extends MessageLookupByLibrary {
         "login_hint_text":
             MessageLookupByLibrary.simpleMessage("Введите вашу почту"),
         "login_label_text": MessageLookupByLibrary.simpleMessage("Логин*"),
+        "name_hint_text":
+            MessageLookupByLibrary.simpleMessage("Введите ваше имя"),
+        "name_is_required_message":
+            MessageLookupByLibrary.simpleMessage("Имя обязательно"),
+        "name_label_text": MessageLookupByLibrary.simpleMessage("Имя*"),
         "password_hint_text":
             MessageLookupByLibrary.simpleMessage("Введите свой пароль"),
         "password_is_required_message":
             MessageLookupByLibrary.simpleMessage("Пароль обязателен"),
         "password_label_text": MessageLookupByLibrary.simpleMessage("Пароль*"),
+        "send": MessageLookupByLibrary.simpleMessage("Отправить"),
         "submit_login_form":
             MessageLookupByLibrary.simpleMessage("Авторизоваться"),
         "submit_logout":
-            MessageLookupByLibrary.simpleMessage("Выйти из аккаунта")
+            MessageLookupByLibrary.simpleMessage("Выйти из аккаунта"),
+        "surname_hint_text":
+            MessageLookupByLibrary.simpleMessage("Ввудите вашу фамилию"),
+        "surname_is_required_message":
+            MessageLookupByLibrary.simpleMessage("Фамилия обязательна"),
+        "surname_label_text": MessageLookupByLibrary.simpleMessage("Фамилия*")
       };
 }

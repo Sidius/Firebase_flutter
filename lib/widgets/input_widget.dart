@@ -8,6 +8,7 @@ class InputWidget extends StatefulWidget {
   final bool isPassword;
   final FormFieldValidator<String?>? validator;
   final IconData iconData;
+  final TextInputType? keyboardType;
 
   InputWidget({
     Key? key,
@@ -18,6 +19,7 @@ class InputWidget extends StatefulWidget {
     this.validator,
     required this.iconData,
     this.isHidden = true,
+    this.keyboardType,
   }) : super(key: key);
 
   @override
@@ -30,6 +32,7 @@ class _InputWidgetState extends State<InputWidget> {
     return TextFormField(
       controller: widget.textEditingController,
       obscureText: widget.isPassword ? widget.isHidden : false,
+      keyboardType: widget.keyboardType,
       decoration: InputDecoration(
         labelText: widget.labelText,
         hintText: widget.hintText,

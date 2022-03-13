@@ -110,6 +110,66 @@ class S {
     );
   }
 
+  /// `Name*`
+  String get name_label_text {
+    return Intl.message(
+      'Name*',
+      name: 'name_label_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter your name`
+  String get name_hint_text {
+    return Intl.message(
+      'Enter your name',
+      name: 'name_hint_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Surname*`
+  String get surname_label_text {
+    return Intl.message(
+      'Surname*',
+      name: 'surname_label_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter your surname`
+  String get surname_hint_text {
+    return Intl.message(
+      'Enter your surname',
+      name: 'surname_hint_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Age*`
+  String get age_label_text {
+    return Intl.message(
+      'Age*',
+      name: 'age_label_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter your age`
+  String get age_hint_text {
+    return Intl.message(
+      'Enter your age',
+      name: 'age_hint_text',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Sign in`
   String get submit_login_form {
     return Intl.message(
@@ -180,6 +240,26 @@ class S {
     );
   }
 
+  /// `Name is required`
+  String get name_is_required_message {
+    return Intl.message(
+      'Name is required',
+      name: 'name_is_required_message',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Surname is required`
+  String get surname_is_required_message {
+    return Intl.message(
+      'Surname is required',
+      name: 'surname_is_required_message',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Form is not valid`
   String get form_is_not_valid {
     return Intl.message(
@@ -195,6 +275,16 @@ class S {
     return Intl.message(
       'Hello World',
       name: 'hello_world',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Send`
+  String get send {
+    return Intl.message(
+      'Send',
+      name: 'send',
       desc: '',
       args: [],
     );
