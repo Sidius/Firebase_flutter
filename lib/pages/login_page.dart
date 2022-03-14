@@ -1,4 +1,4 @@
-import 'package:firebase/pages/home_page.dart';
+import 'package:firebase/units/unit_values.dart';
 import 'package:firebase/widgets/input_widget.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -30,6 +30,7 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(AppLocalizations.of(context)!.login_form_title),
+        centerTitle: UnitValues.appBar['centerTitle'],
       ),
       body: Container(
         padding: EdgeInsets.all(30),
@@ -41,7 +42,7 @@ class _LoginPageState extends State<LoginPage> {
                 textEditingController: _loginController,
                 labelText: AppLocalizations.of(context)!.login_label_text,
                 hintText: AppLocalizations.of(context)!.login_hint_text,
-                iconData: Icons.person,
+                iconData: Icons.email,
                 validator: _validateEmail,
               ),
               const SizedBox(height: 10),
@@ -63,11 +64,11 @@ class _LoginPageState extends State<LoginPage> {
                   style: TextStyle(
                       color: Colors.white
                   ),
-                )
+                ),
               ),
             ],
           ),
-        )
+        ),
       ),
     );
   }
