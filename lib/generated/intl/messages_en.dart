@@ -24,6 +24,7 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "age_hint_text": MessageLookupByLibrary.simpleMessage("Enter your age"),
         "age_label_text": MessageLookupByLibrary.simpleMessage("Age*"),
+        "age_title": MessageLookupByLibrary.simpleMessage("Age"),
         "email_is_reg_message":
             MessageLookupByLibrary.simpleMessage("It is not email"),
         "email_is_required_message":
@@ -43,6 +44,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "name_is_required_message":
             MessageLookupByLibrary.simpleMessage("Name is required"),
         "name_label_text": MessageLookupByLibrary.simpleMessage("Name*"),
+        "name_title": MessageLookupByLibrary.simpleMessage("Name"),
         "password_hint_text":
             MessageLookupByLibrary.simpleMessage("Enter your password"),
         "password_is_required_message":
@@ -56,6 +58,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Enter your surname"),
         "surname_is_required_message":
             MessageLookupByLibrary.simpleMessage("Surname is required"),
-        "surname_label_text": MessageLookupByLibrary.simpleMessage("Surname*")
+        "surname_label_text": MessageLookupByLibrary.simpleMessage("Surname*"),
+        "surname_title": MessageLookupByLibrary.simpleMessage("Surname")
       };
 }

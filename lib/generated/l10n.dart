@@ -200,6 +200,36 @@ class S {
     );
   }
 
+  /// `Name`
+  String get name_title {
+    return Intl.message(
+      'Name',
+      name: 'name_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Surname`
+  String get surname_title {
+    return Intl.message(
+      'Surname',
+      name: 'surname_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Age`
+  String get age_title {
+    return Intl.message(
+      'Age',
+      name: 'age_title',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `ID`
   String get id_title {
     return Intl.message(

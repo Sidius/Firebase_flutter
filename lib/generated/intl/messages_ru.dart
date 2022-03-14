@@ -25,11 +25,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "age_hint_text":
             MessageLookupByLibrary.simpleMessage("Введите возраст"),
         "age_label_text": MessageLookupByLibrary.simpleMessage("Возраст*"),
+        "age_title": MessageLookupByLibrary.simpleMessage("Возраст"),
         "email_is_reg_message":
             MessageLookupByLibrary.simpleMessage("Это не почта"),
         "email_is_required_message":
             MessageLookupByLibrary.simpleMessage("Почта обязательна"),
-        "email_title": MessageLookupByLibrary.simpleMessage("Email"),
+        "email_title": MessageLookupByLibrary.simpleMessage("Почта"),
         "form_is_not_valid":
             MessageLookupByLibrary.simpleMessage("Форма неверная"),
         "hello_world": MessageLookupByLibrary.simpleMessage("Привет мир"),
@@ -44,6 +45,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "name_is_required_message":
             MessageLookupByLibrary.simpleMessage("Имя обязательно"),
         "name_label_text": MessageLookupByLibrary.simpleMessage("Имя*"),
+        "name_title": MessageLookupByLibrary.simpleMessage("Имя"),
         "password_hint_text":
             MessageLookupByLibrary.simpleMessage("Введите свой пароль"),
         "password_is_required_message":
@@ -55,9 +57,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "submit_logout":
             MessageLookupByLibrary.simpleMessage("Выйти из аккаунта"),
         "surname_hint_text":
-            MessageLookupByLibrary.simpleMessage("Ввудите вашу фамилию"),
+            MessageLookupByLibrary.simpleMessage("Введите вашу фамилию"),
         "surname_is_required_message":
             MessageLookupByLibrary.simpleMessage("Фамилия обязательна"),
-        "surname_label_text": MessageLookupByLibrary.simpleMessage("Фамилия*")
+        "surname_label_text": MessageLookupByLibrary.simpleMessage("Фамилия*"),
+        "surname_title": MessageLookupByLibrary.simpleMessage("Фамилия")
       };
 }
