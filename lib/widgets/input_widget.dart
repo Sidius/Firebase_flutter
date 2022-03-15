@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class InputWidget extends StatefulWidget {
-  bool isHidden = true;
   final TextEditingController textEditingController;
   final String labelText;
   final String? hintText;
@@ -18,7 +17,6 @@ class InputWidget extends StatefulWidget {
     this.isPassword = false,
     this.validator,
     required this.iconData,
-    this.isHidden = true,
     this.keyboardType,
   }) : super(key: key);
 
@@ -27,11 +25,20 @@ class InputWidget extends StatefulWidget {
 }
 
 class _InputWidgetState extends State<InputWidget> {
+
+  bool isHidden = true;
+
+  @override
+  void initState() {
+    isHidden = true;
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return TextFormField(
       controller: widget.textEditingController,
-      obscureText: widget.isPassword ? widget.isHidden : false,
+      obscureText: widget.isPassword ? isHidden : false,
       keyboardType: widget.keyboardType,
       decoration: InputDecoration(
         labelText: widget.labelText,
@@ -45,10 +52,10 @@ class _InputWidgetState extends State<InputWidget> {
             },
           )
           : IconButton(
-            icon: Icon(widget.isHidden ? Icons.visibility : Icons.visibility_off),
+            icon: Icon(isHidden ? Icons.visibility : Icons.visibility_off),
             onPressed: () {
               setState(() {
-                widget.isHidden = !widget.isHidden;
+                isHidden = !isHidden;
               });
             },
           ),

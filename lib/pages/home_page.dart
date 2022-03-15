@@ -1,5 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase/pages/login_page.dart';
+import 'package:firebase/pages/auth_page.dart';
 import 'package:firebase/units/unit_values.dart';
 import 'package:firebase/widgets/card_attribute_widget.dart';
 import 'package:firebase/widgets/storage_form_widget.dart';
@@ -21,7 +21,7 @@ class HomePage extends StatelessWidget {
     if (user == null) {
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => LoginPage()),
+        MaterialPageRoute(builder: (context) => AuthPage()),
       );
     }
 

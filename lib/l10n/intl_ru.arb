@@ -25,5 +25,8 @@
   "surname_is_required_message": "Фамилия обязательна",
   "form_is_not_valid": "Форма неверная",
   "hello_world": "Привет мир",
+  "no_account_title": "Нет аккаунта?",
+  "have_account_title": "Уже есть аккаунт?",
+  "sign_up_title": "Зарегистрироваться",
   "send": "Отправить"
 }

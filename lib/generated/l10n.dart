@@ -310,6 +310,36 @@ class S {
     );
   }
 
+  /// `No account?`
+  String get no_account_title {
+    return Intl.message(
+      'No account?',
+      name: 'no_account_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Already have an account?`
+  String get have_account_title {
+    return Intl.message(
+      'Already have an account?',
+      name: 'have_account_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign Up`
+  String get sign_up_title {
+    return Intl.message(
+      'Sign Up',
+      name: 'sign_up_title',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Send`
   String get send {
     return Intl.message(

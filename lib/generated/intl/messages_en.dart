@@ -32,6 +32,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "email_title": MessageLookupByLibrary.simpleMessage("Email"),
         "form_is_not_valid":
             MessageLookupByLibrary.simpleMessage("Form is not valid"),
+        "have_account_title":
+            MessageLookupByLibrary.simpleMessage("Already have an account?"),
         "hello_world": MessageLookupByLibrary.simpleMessage("Hello World"),
         "home_page": MessageLookupByLibrary.simpleMessage("Home Page"),
         "id_title": MessageLookupByLibrary.simpleMessage("ID"),
@@ -45,6 +47,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Name is required"),
         "name_label_text": MessageLookupByLibrary.simpleMessage("Name*"),
         "name_title": MessageLookupByLibrary.simpleMessage("Name"),
+        "no_account_title": MessageLookupByLibrary.simpleMessage("No account?"),
         "password_hint_text":
             MessageLookupByLibrary.simpleMessage("Enter your password"),
         "password_is_required_message":
@@ -52,6 +55,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "password_label_text":
             MessageLookupByLibrary.simpleMessage("Password*"),
         "send": MessageLookupByLibrary.simpleMessage("Send"),
+        "sign_up_title": MessageLookupByLibrary.simpleMessage("Sign Up"),
         "submit_login_form": MessageLookupByLibrary.simpleMessage("Sign in"),
         "submit_logout": MessageLookupByLibrary.simpleMessage("Logout"),
         "surname_hint_text":

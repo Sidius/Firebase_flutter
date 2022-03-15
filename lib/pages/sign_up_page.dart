@@ -5,11 +5,11 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
-class LoginPage extends StatefulWidget {
+class SignUpPage extends StatefulWidget {
 
   final VoidCallback onClickedSignUp;
 
-  const LoginPage({
+  const SignUpPage({
     Key? key,
     required this.onClickedSignUp,
   }) : super(key: key);
@@ -17,10 +17,10 @@ class LoginPage extends StatefulWidget {
 
 
   @override
-  State<LoginPage> createState() => _LoginPageState();
+  State<SignUpPage> createState() => _SignUpPageState();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class _SignUpPageState extends State<SignUpPage> {
 
   final _formKey = GlobalKey<FormState>();
 
@@ -69,7 +69,7 @@ class _LoginPageState extends State<LoginPage> {
                   backgroundColor: MaterialStateProperty.all(Colors.red),
                 ),
                 onPressed: _submitForm,
-                child: Text(AppLocalizations.of(context)!.submit_login_form,
+                child: Text(AppLocalizations.of(context)!.sign_up_title,
                   style: TextStyle(
                     color: Colors.white,
                   ),
@@ -79,17 +79,17 @@ class _LoginPageState extends State<LoginPage> {
               RichText(
                 textAlign: TextAlign.center,
                 text: TextSpan(
-                  text: AppLocalizations.of(context)!.no_account_title + ' ',
-                  children: [
-                    TextSpan(
-                      text: AppLocalizations.of(context)!.sign_up_title,
-                      recognizer: TapGestureRecognizer()..onTap = widget.onClickedSignUp,
-                      style: TextStyle(
-                        decoration: TextDecoration.underline,
-                        color: Theme.of(context).colorScheme.secondary,
+                    text: AppLocalizations.of(context)!.have_account_title + ' ',
+                    children: [
+                      TextSpan(
+                        text: AppLocalizations.of(context)!.submit_login_form,
+                        recognizer: TapGestureRecognizer()..onTap = widget.onClickedSignUp,
+                        style: TextStyle(
+                          decoration: TextDecoration.underline,
+                          color: Theme.of(context).colorScheme.secondary,
+                        ),
                       ),
-                    ),
-                  ]
+                    ]
                 ),
               ),
             ],
@@ -102,7 +102,7 @@ class _LoginPageState extends State<LoginPage> {
   Future _submitForm() async {
     if (_formKey.currentState!.validate()) {
       _formKey.currentState!.save();
-      await FirebaseAuth.instance.signInWithEmailAndPassword(
+      await FirebaseAuth.instance.createUserWithEmailAndPassword(
         email: _loginController.text.trim().toLowerCase(),
         password: _passwordController.text.trim(),
       );

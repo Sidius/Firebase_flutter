@@ -33,6 +33,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "email_title": MessageLookupByLibrary.simpleMessage("Почта"),
         "form_is_not_valid":
             MessageLookupByLibrary.simpleMessage("Форма неверная"),
+        "have_account_title":
+            MessageLookupByLibrary.simpleMessage("Уже есть аккаунт?"),
         "hello_world": MessageLookupByLibrary.simpleMessage("Привет мир"),
         "home_page": MessageLookupByLibrary.simpleMessage("Домашняя страница"),
         "id_title": MessageLookupByLibrary.simpleMessage("ID"),
@@ -46,12 +48,16 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Имя обязательно"),
         "name_label_text": MessageLookupByLibrary.simpleMessage("Имя*"),
         "name_title": MessageLookupByLibrary.simpleMessage("Имя"),
+        "no_account_title":
+            MessageLookupByLibrary.simpleMessage("Нет аккаунта?"),
         "password_hint_text":
             MessageLookupByLibrary.simpleMessage("Введите свой пароль"),
         "password_is_required_message":
             MessageLookupByLibrary.simpleMessage("Пароль обязателен"),
         "password_label_text": MessageLookupByLibrary.simpleMessage("Пароль*"),
         "send": MessageLookupByLibrary.simpleMessage("Отправить"),
+        "sign_up_title":
+            MessageLookupByLibrary.simpleMessage("Зарегистрироваться"),
         "submit_login_form":
             MessageLookupByLibrary.simpleMessage("Авторизоваться"),
         "submit_logout":
