@@ -14,8 +14,6 @@ class LoginPage extends StatefulWidget {
     required this.onClickedSignUp,
   }) : super(key: key);
 
-
-
   @override
   State<LoginPage> createState() => _LoginPageState();
 }
